@@ -53,7 +53,7 @@
       font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.5;
+      line-height: 1.55;
       padding: 3rem 1.25rem 4rem;
       max-width: 640px;
       margin: 0 auto;
@@ -80,14 +80,45 @@
     }
     .theme-btn:hover { border-color: var(--accent); }
 
-    header { margin-bottom: 2.75rem; }
+    header { margin-bottom: 2rem; }
     h1 {
-      font-size: 1.6rem;
+      font-size: 1.7rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.4rem;
     }
-    .tagline { color: var(--muted); font-size: 0.9rem; }
+    .tagline {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .main-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--card);
+      padding: 1.25rem 1.2rem;
+      margin-bottom: 2.25rem;
+    }
+    .main-card .handle {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+    .main-card .handle a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .main-card .handle a:hover { color: var(--accent); }
+    .main-card .desc {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .main-card .desc strong {
+      color: var(--text);
+      font-weight: 500;
+    }
 
     section { margin-bottom: 2.25rem; }
     h2 {
@@ -183,11 +214,22 @@
 
   <header>
     <h1>くぁー / kubobeem</h1>
-    <p class="tagline">サブ垢の集合体 · OSS · 無料 · NoLog</p>
+    <p class="tagline">サブ垢の集合体。<br>OSS・無料・NoLogが好き。有料と企業と執着が嫌い。</p>
   </header>
 
+  <div class="main-card">
+    <div class="handle"><a href="https://x.com/qa_a_aa" target="_blank">@qa_a_aa</a></div>
+    <p class="desc">
+      くぁーのメイン（表記はサブ垢）。<br>
+      X・GitHub・Hugging Face・複数ドメインを横断して動いてる。<br>
+      個人開発・TUI・分散チャット・ローカルLLMあたりをよく触る。<br>
+      <strong>好き:</strong> OSS / 無料 / NoLog　
+      <strong>嫌い:</strong> 有料 / Closed / 企業 / 執着 / 粘着 / ほぼ不可能への挑戦
+    </p>
+  </div>
+
   <section>
-    <h2>X</h2>
+    <h2>X Accounts</h2>
     <div class="list">
       <a class="row" href="https://x.com/qa_a_aa" target="_blank">
         <span class="name">@qa_a_aa</span>
