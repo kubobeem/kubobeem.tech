@@ -328,6 +328,9 @@ pre{
   border-radius:3px;
 }
 /* 分割ページ用 */
+nav a[aria-current="page"]{
+  background:#e8f0fe;
+}
 .pager{
   display:flex;
   flex-wrap:wrap;
@@ -357,7 +360,7 @@ pre{
   font-size:.9rem;
 }
 .toc{
-  margin:0 0 0 1.4rem;
+  margin:0 0 1.4rem 1.4rem;
   font-size:.92rem;
 }
 .toc li{
