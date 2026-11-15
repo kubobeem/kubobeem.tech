@@ -1,0 +1,6 @@
+/style.css
+  Cache-Control: public, max-age=86400
+/me/*
+  Cache-Control: public, max-age=86400
+/*
+  Cache-Control: no-cache
